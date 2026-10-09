@@ -1,0 +1,29 @@
+public class HospitalManagementSystem {
+
+    static class Patient {
+        int id = 143;
+        String name = "Sandeep";
+        int age = 24;
+        String disease = "Fever";
+        String doctor = "Dr. Sandeep";
+        double bill = 2000;
+
+        void display() {
+            System.out.println("===== HOSPITAL MANAGEMENT SYSTEM =====");
+            System.out.println("Patient ID : " + id);
+            System.out.println("Name       : " + name);
+            System.out.println("Age        : " + age);
+            System.out.println("Disease    : " + disease);
+            System.out.println("Doctor     : " + doctor);
+            System.out.println("Bill       : Rs." + bill);
+            System.out.println("Registration : Successful");
+        }
+    }
+
+    public static void main(String[] args) {
+
+        Patient p = new Patient();
+
+        p.display();
+    }
+}
